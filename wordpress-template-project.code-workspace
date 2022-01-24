@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "Theme",
+            "path": "wp-content/themes/template-theme"
+        },
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

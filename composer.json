@@ -1,0 +1,28 @@
+{
+	"name": "lordealeister/wordpress-template-project",
+	"license": "MIT",
+	"description": "Wordpress template project",
+	"authors": [
+		{
+			"name": "Lorde Aleister",
+			"email": "lordealeister@gmail.com",
+			"homepage": "https://github.com/lordealeister"
+		}
+	],
+	"repositories":[
+		{
+			"type":"composer",
+			"url":"https://wpackagist.org"
+		}
+	],
+	"extra": {
+		"installer-paths": {
+			"./wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+		}
+	},
+	"require": {
+		"composer/installers": "dev-main",
+		"vlucas/phpdotenv": "4.1"
+	},
+	"prefer-stable": true
+}
