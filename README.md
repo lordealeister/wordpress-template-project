@@ -37,4 +37,4 @@ Configure the project by following the steps:
 - Browsersync dashboard: http://localhost:3001/
 - phpMyAdmin: http://localhost:8080/
 - - Login: root
-- - Senha: root
+- - Password: root
