@@ -22,7 +22,7 @@ Configure the project by following the steps:
 
 2. Set the `PROJECT_NAME` variable on `.env` file
 
-3. Set the `WP_DEFAULT_THEME` variable on `.env` file
+3. Set the `WP_DEFAULT_THEME` and `THEME_SLUG` variable on `.env` file
 
 4. Set `SECRET KEYS` variables on `.env` file, getting from [secret keys](https://api.wordpress.org/secret-key/1.1/salt/)
 

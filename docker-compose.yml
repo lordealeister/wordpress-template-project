@@ -39,7 +39,7 @@ services:
       - './vendor:/var/www/html/vendor'
       - './.env:/var/www/html/.env'
       - './wp-config.php:/var/www/html/wp-config.php'
-      - './wp-content/themes/${WP_DEFAULT_THEME}:/var/www/html/wp-content/themes/${WP_DEFAULT_THEME}'
+      - './wp-content/themes/${THEME_SLUG}:/var/www/html/wp-content/themes/${THEME_SLUG}'
       - './wp-content/plugins:/var/www/html/wp-content/plugins'
       - './wp-content/uploads:/var/www/html/wp-content/uploads'
     depends_on:
@@ -50,7 +50,7 @@ services:
     image: composer
     volumes_from:
       - wordpress
-    working_dir: '/var/www/html/wp-content/themes/${WP_DEFAULT_THEME}'
+    working_dir: '/var/www/html/wp-content/themes/${THEME_SLUG}'
     command: composer install --ignore-platform-reqs
     depends_on:
       - wordpress
@@ -62,7 +62,7 @@ services:
       - themebackend
       - config
       - wordpress
-    working_dir: '/var/www/html/wp-content/themes/${WP_DEFAULT_THEME}'
+    working_dir: '/var/www/html/wp-content/themes/${THEME_SLUG}'
     command: bash -c "yarn && yarn start"
     ports:
       - '3000:3000'
