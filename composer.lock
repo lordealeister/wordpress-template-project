@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d63ad98c5f87a3a0d223b4fea7fc289",
+    "content-hash": "a493fc661302558bc3cad96e553d5d9f",
     "packages": [
         {
             "name": "composer/installers",
@@ -364,6 +364,24 @@
                 "source": "https://github.com/vlucas/phpdotenv/tree/v4.1.0"
             },
             "time": "2019-12-14T13:59:29+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-mailhog-smtp",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mailhog-smtp/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mailhog-smtp.zip?timestamp=1627489338"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mailhog-smtp/"
         }
     ],
     "packages-dev": [],

@@ -22,7 +22,8 @@
 	},
 	"require": {
 		"composer/installers": "dev-main",
-		"vlucas/phpdotenv": "4.1"
+		"vlucas/phpdotenv": "4.1",
+    "wpackagist-plugin/wp-mailhog-smtp": "1.0.1"
 	},
 	"prefer-stable": true
 }
