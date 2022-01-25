@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a493fc661302558bc3cad96e553d5d9f",
+    "content-hash": "9781777e462e25e3841039f1e42ed445",
     "packages": [
         {
             "name": "composer/installers",
@@ -364,6 +364,24 @@
                 "source": "https://github.com/vlucas/phpdotenv/tree/v4.1.0"
             },
             "time": "2019-12-14T13:59:29+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/fakerpress",
+            "version": "0.5.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/fakerpress/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip?timestamp=1610833803"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/fakerpress/"
         },
         {
             "name": "wpackagist-plugin/wp-mailhog-smtp",
